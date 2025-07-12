@@ -1,0 +1,503 @@
+using System.ComponentModel.Design;
+using System.Diagnostics.Metrics;
+using System.Drawing;
+using System.Runtime.Serialization;
+
+namespace ASSIGMENT_SESSION3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            #region example01 
+
+            //////Write a program that allows the user to enter a number then print it.
+
+            //Console.WriteLine("enter your number ");
+            //Console.Write(" number : ");
+            //int number = int.Parse(Console.ReadLine());
+            //Console.WriteLine(number);
+            #endregion
+
+
+
+            #region example02 
+
+            ////Write C# program that converts a string to an integer, but the string contains non-numeric characters. And mention what will happen
+
+            //Console.WriteLine("enter your age ");
+            //Console.Write(" number : ");
+            //int age;
+            //bool flag = int.TryParse(Console.ReadLine(), out age);
+            //Console.WriteLine(age);
+            #endregion
+
+
+
+
+
+
+
+
+            #region example03 
+
+
+            ////Write C# program that Perform a simple arithmetic operation with floating-point numbers And mention what will happen
+
+
+            //float f = 2.5f;
+            //double d = 1.5555;
+
+
+            //double result = f + d;
+
+            //Console.WriteLine(result );
+
+            #endregion
+
+
+
+
+
+
+
+            #region example 04 
+
+
+            //Console.Write("Enter a string: ");
+            //string text = Console.ReadLine();
+
+            //Console.Write("Enter start index: ");
+            //int start = int.Parse ($"Console.ReadLine()");
+
+            //Console.Write("Enter length: ");
+            //int len = int.Parse(Console.ReadLine());
+
+            //string result = text.Substring(start, len); 
+            //Console.WriteLine("Substring: " + result);
+
+
+
+
+
+            #endregion
+
+
+
+
+
+
+            #region example 05 
+
+
+
+            //int X = 5;
+            //int y = 10;
+            //y = X;
+            //X++;
+            //Console.WriteLine( y );
+
+
+            //// y is ont depended at x becauuse its only variable has his own value on the stack 
+            #endregion
+
+
+
+
+
+
+            #region  example 06 
+
+
+            //Write C# program that Assigning one reference type variable to another and modifying the object through one variable and mention what will happen
+
+
+            //    // calss point {
+            //    int x = 5;
+            //    int y = 10;
+            //}
+
+
+            //point p1  = new point () ; 
+            //Point p2 = new Point(); 
+            //p2 = p 1  ; 
+
+            // console.writeline ( p2 . x ) 
+            // p2 هتشاور ع للعنوان اللى بتشاور عليه p1 عشان كدة القيمة هتكون 5 
+
+            #endregion
+
+
+
+
+
+
+
+
+
+            #region 
+
+
+
+            //Console.WriteLine(" enter your first string ");
+            //Console.Write("first string : ");
+            //string first = Console.ReadLine();
+
+
+
+            //Console.WriteLine(" enter your sec string ");
+            //Console.Write("sec string : ");
+            //string sec  = Console.ReadLine();
+
+
+            //string message = $"{first} {sec} ";
+            //Console.WriteLine( message );
+
+
+            #endregion
+
+
+
+
+
+
+
+            #region examplw 08 
+            //Write a program that calculates the simple interest given the principal amount, rate of interest, and time. 
+            // Note: The formula for simple interest is Interest = (principal * rate * time) / 100.
+
+
+
+
+
+            //double principal = 1000;
+            //double rate = 5;
+            //int time = 2; 
+
+
+            //double interest = (principal * rate * time) / 100;
+
+
+            //Console.WriteLine("Simple Interest = " + interest);
+
+
+
+            #endregion
+
+
+            #region example 09 
+
+
+            //Write a program that calculates the Body Mass Index (BMI) given a person's weight in kilograms and height in meters. 
+            // Note: The formula for BMI is BMI = (Weight) / (Height * Height)
+
+
+
+            //Console.WriteLine(" enter your weight ");
+            //Console.Write("weight : ");
+            //double weight = Convert.ToDouble(Console.ReadLine());
+
+
+            //Console.WriteLine(" enter your height ");
+            //Console.Write("heigh : ");
+            //double height  = Convert.ToDouble(Console.ReadLine());
+
+
+
+            //double  bmi = (weight) / (height * height);
+
+
+            //Console.WriteLine(bmi );
+
+
+
+            #endregion
+
+
+
+
+
+
+
+            #region example 10 
+
+            //Console.WriteLine("enter your degree");
+            //Console.Write(" degree : ");
+            //int degree = int.Parse(Console.ReadLine());
+
+
+            //string message = (degree < 10) ? "just cold " : (degree > 30) ? "just hot   " : " gust good ";
+            //Console.WriteLine(message );
+
+
+
+            #endregion
+
+
+
+
+
+            #region example 011 
+
+
+            //Console.Write("Enter the day: ");
+            //int day = int.Parse(Console.ReadLine());
+
+
+            //Console.Write("Enter the month: ");
+            //int month = int.Parse(Console.ReadLine());
+
+            //Console.Write("Enter the year: ");
+            //int year = int.Parse(Console.ReadLine());
+
+            //Console.Clear(); 
+
+            //Console.WriteLine($"Today's date : {day} , {month} , {year}");
+            //Console.WriteLine($"Today's date : {day} / {month} / {year}");
+            //Console.WriteLine($"Today's date : {day} – {month} – {year}");
+
+
+            #endregion
+
+
+
+
+
+
+            #region example 012 
+
+            //Console.WriteLine("enter your number ");
+            //Console.Write(" number :");
+            //int number = int.Parse(Console.ReadLine()); 
+
+
+            //if (number%3==0 && number%4==0 )
+            //{
+            //    Console.WriteLine("yes "); 
+            //}
+            //else
+            //    Console.WriteLine("no ");
+
+
+
+
+
+
+
+
+            #endregion
+
+
+
+
+
+
+
+
+
+            #region  example 13 
+
+
+
+            //13- Write a program that allows the user to insert an integer then print negative if it is negative number otherwise print positive.
+
+            //Console.WriteLine("enter your number ");
+            //Console.Write(" number :");
+            //int number = int.Parse(Console.ReadLine());
+
+
+
+            //string message = number > 0 ? "positive " : "negative";
+            //Console.WriteLine(message);
+
+
+
+
+
+
+
+            #endregion
+
+
+
+
+
+
+            #region example 14 
+
+
+
+
+
+
+
+
+
+            //        Console.WriteLine("Enter 3 numbers:");
+
+            //        Console.Write("First number: ");
+            //        int num1 = int.Parse(Console.ReadLine());
+
+            //        Console.Write("Second number: ");
+            //        int num2 = int.Parse(Console.ReadLine());
+
+            //        Console.Write("Third number: ");
+            //        int num3 = int.Parse(Console.ReadLine());
+
+            //        int max = num1;
+            //        int min = num1;
+
+            //        if (num2 > max)
+            //        {
+            //            max = num2;
+            //        }
+            //    if (num3 > max)
+            //    {
+            //        max = num3;
+            //    }
+
+
+            //        if (num2 < min)
+            //        {
+            //            min = num2;
+            //        }
+            //      if (num3 < min)
+            //    {
+            //        min = num3;
+            //    }
+
+            //        Console.WriteLine("max element = " + max);
+            //        Console.WriteLine("min element = " + min);
+            //    }
+            //}
+
+
+
+            #endregion
+
+
+
+
+
+
+
+            #region example 15 
+
+
+
+            //15- Write a program that allows the user to insert an integer number then check If a number is even or odd.
+
+            //Console.WriteLine("enter your number ");
+            //Console.Write(" number :");
+            //int number = int.Parse(Console.ReadLine());
+
+
+
+            //if (number % 2 == 0)
+            //{
+            //    Console.WriteLine("number is even ");
+            //}
+            //else
+
+            //    Console.WriteLine("the number is odd ");
+
+
+
+
+            #endregion
+
+
+
+
+
+
+
+
+
+
+            #region 
+
+
+
+
+            //Console.Write("Enter a character: ");
+            //char ch = char.Parse(Console.ReadLine());
+
+            //if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            //{
+            //    Console.WriteLine("vowel");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("consonant");
+            //}
+
+
+
+            #endregion
+
+
+
+            #region example17 
+
+
+
+
+
+          
+
+
+       
+           
+                Console.Write("Enter month: ");
+                int month = int.Parse(Console.ReadLine());
+
+                if (month == 1 || month == 3 || month == 5 || month == 7 ||
+                    month == 8 || month == 10 || month == 12)
+                {
+                    Console.WriteLine("Number of days: 31");
+                }
+                else if (month == 4 || month == 6 || month == 9 || month == 11)
+                {
+                    Console.WriteLine("Number of days: 30");
+                }
+                else if (month == 2)
+                {
+                    Console.WriteLine("Number of days: 28 ");
+                }
+               
+            
+
+
+
+
+
+
+
+        #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
